@@ -13,30 +13,34 @@ body {
   padding-right: 20px;
 }
 
+.list {
+  list-style: none;
+}
+
 .wrapper {
   background: #fff;
-  display: flex;
-  max-width: 1200px;
+  /* display: flex; */
+  max-width: 320px;
   margin: 0 auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar {
   background: #1e2939;
-  width: 370px;
+  width: 320px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .my-photo {
-  width: 370px;
+  width: 320px;
 }
 
 .about-me-container {
-  padding-left: 90px;
-  padding-right: 90px;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .my-contacs {
@@ -55,7 +59,7 @@ body {
   font-size: 14px;
   font-weight: 400px;
   font-style: normal;
-  color: #4c5562;
+  color: #e3630e;
 }
 
 .contacts-link-tipe {
@@ -125,17 +129,23 @@ body {
   margin-left: 15px;
 }
 
+.info-display-none-mobile {
+  display: none;
+}
+
 .profession {
   font-size: 14px;
   font-weight: 700px;
   line-height: 24px;
   margin-bottom: 25px;
+  color: #fff;
 }
 
 .name {
   font-size: 45px;
   font-weight: 700px;
   line-height: 89px;
+  color: #fff;
 }
 
 .discription {
@@ -143,6 +153,7 @@ body {
   font-weight: 400px;
   line-height: 24px;
   margin-top: 24px;
+  color: #fff;
 }
 
 .info-container {
@@ -177,7 +188,7 @@ body {
 
 .project-item {
   font-weight: 700;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .projects-container {
@@ -242,4 +253,33 @@ body {
 
 .education-divider {
   color: #000;
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    display: flex;
+    max-width: 1200px;
+  }
+
+  .info-display-none {
+    display: none;
+  }
+
+  .profession {
+    color: #000;
+  }
+  .about-me-container {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .name {
+    color: #000;
+  }
+
+  .discription {
+    color: #000;
+  }
 }

@@ -6,14 +6,27 @@
     <title>My resume</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.css"
+        integrity="sha512-oxqL25oMBPTFLK5OOR4U/Y//5oyc+3B8MJVTuGD2FLdyA+VXlhKMyQ7YjHNSI5+CLk0UdMLw1lV64dDuT1Batw=="
+        crossorigin="anonymous" />
 </head>
 <body>
     <!-- main container -->
     <div class="wrapper">
         <aside class="sidebar">
-            <img class="my-photo" src="./img/photo_2021-01-13_11-43-21.jpg" alt="My photo">
+            <img class="my-photo" src="./img/my-photo.jpg" alt="My photo" width="320" height="320">
 
             <!-- contacts container -->
+            <div class="info-container info-display-none">
+                <!-- about me info -->
+                <h2 class="profession">Full-stack Developer</h2>
+                <h1 class="name">Ivan Khripko</h1>
+            
+                <p class="discription">I study at the school of go it. Learned the html / css course. I will be studying java script
+                    for the next four months.
+                    Then react, node.js, react native. I'm 25.
+                </p>
+            </div>
             <div class="my-contacs">
                 <h3 class="contacs-title">Contacts</h3>
                 <div>
@@ -34,7 +47,14 @@
                         <span class="tech-skills-text">HTML5</span>
                     </li>
                     <li class="tech-skills-item">
-                        <span class="tech-skills-text">CSS3</span></li>
+                        <span class="tech-skills-text">CSS3</span>
+                    </li>
+                    <li class="tech-skills-item">
+                        <span class="tech-skills-text">SASS</span>
+                    </li>
+                    <li class="tech-skills-item">
+                        <span class="tech-skills-text">BEM</span>
+                    </li>
                     <li class="tech-skills-item">
                         <span class="tech-skills-text">GIT</span>
                     </li>
@@ -69,6 +89,9 @@
                     <li class="soft-skills-item">
                         <span class="soft-skills-text">Teamwork</span>
                     </li>
+                    <li class="soft-skills-item">
+                        <span class="soft-skills-text">English: A2</span>
+                    </li>
                 </ul>
             </div>
     
@@ -76,115 +99,108 @@
 
         <!-- about me container -->
     <div class="about-me-container">
-        <div class="info-container">
-            <!-- about me info -->
-            <h2 class="profession">Front-End Developer</h2>
-            <h1 class="name">Ivan Khripko</h1>
-
-            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna
-                aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                facilisis.</p>
-        </div>
-        <!--projects container-->
-        <div class="projects-container">
-            <h3 class="about-me-title">Projects</h3>
-            <ol>
-                <li class="project-item">
-                    <a class="projects-link" 
-                    href="https://lovecamp.goit.ua/"> 
-                    https://lovecamp.goit.ua/
-                    </a>
-                    <span class="dots" >.......................</span>
-                    <span> <b>[</b> <span class="tech-name">HTML5, CSS3</span> <b>]</b> </span>
-                </li>
-                <li class="project-item">
-                    <a  class="projects-link" 
-                    href="https://cryptohub.goit.ua/"> 
-                    https://cryptohub.goit.ua/
-                    </a>
-                    <span class="dots" >......................</span>
-                    <span> <b>[</b> <span class="tech-name">JavaScript</span> <b>]</b> </span>
-                </li>
-                <li class="project-item">
-                    <a  class="projects-link" 
-                    href="https://kidslike.goit.co.ua/"> 
-                    https://kidslike.goit.co.ua/
-                    </a>
-                    <span class="dots" >......................</span>
-                    <span> <b>[</b> <span class="tech-name"> React.js, Node.js </span> <b>]</b> </span>
-                </li>
-            </ol>
-        </div>
+            <div class="info-container info-display-none-mobile">
+                <!-- about me info -->
+                <h2 class="profession">Full-stack Developer</h2>
+                <h1 class="name">Ivan Khripko</h1>
+            
+                <p class="discription">I study at the school of go it. Learned the html / css course. I will be studying java script
+                    for the next four months.
+                    Then react, node.js, react native. I'm 25.
+                </p>
+            </div>
+            <!--projects container-->
+            <div class="projects-container">
+                <h3 class="about-me-title">Projects</h3>
+                <ol class="list">
+                    <li class="project-item">
+                        <a class="projects-link" href="https://ivankhripko.github.io/resume/">
+                            Resume
+                        </a>
+                        <span class="dots">.......................</span>
+                        <span> <b>[</b> <span class="tech-name">HTML5, CSS3</span> <b>]</b> </span>
+                    </li>
+                    <li class="project-item">
+                        <a class="projects-link" href="https://ivankhripko.github.io/goit-markup-hw-08/">
+                            Web-studio
+                        </a>
+                        <span class="dots">......................</span>
+                        <span> <b>[</b> <span class="tech-name">HTML5, SASS, BEM, JS</span> <b>]</b> </span>
+                    </li>
+                    <li class="project-item">
+                        <a class="projects-link" href="https://irynakarmazinova.github.io/icecream-project/">
+                            Icecream-project
+                        </a>
+                        <span class="dots">......................</span>
+                        <span> <b>[</b> <span class="tech-name"> HTML5, SASS, JS, GIT</span> <b>]</b> </span>
+                    </li>
+                </ol>
+            </div>
   
     <!--work Experience-->
         <div>
         <h3 class="about-me-title">Work Experience</h3>
 
         <!-- company 1 -->
+            <div>
+                <h4 class="profession-title">Specialist
+                    <span class="profession-company">New Post</span>
+                </h4>
+                <span class="profession-time">
+                    November 2020 - up to now <span class="profession-divider"> | </span> Kharkiv
+                </span>           
+                <ul class="profession-duties">
+                    <li class="profession-duties-item">Processing and sending parcels to different cities of Ukraine.</li>
+                    <li class="profession-duties-item">Palletizing</li>
+                    <li class="profession-duties-item">Scanning</li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- company 2 -->
         <div>
-            <h4 class="profession-title">Front-End Developer
-                <span class="profession-company">Freelance</span> 
+            <h4 class="profession-title">Barmanager
+                <span class="profession-company"> Kupava</span>
             </h4>
             <span class="profession-time">
-                September 2019 - up to now <span class="profession-divider"> | </span> Ukraine
+                May 2020 - November 2020 <span class="profession-divider"> | </span> Kharkiv
             </span>
-
+        
             <ul class="profession-duties">
-                <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</li>
-                <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
-                <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+                <li class="profession-duties-item"> Development of drinks menu.
+                </li>
+                <li class="profession-duties-item">Product control and beverage preparation.</li>
+                <li class="profession-duties-item">Cash discipline.</li>
             </ul>
         </div>
 
-    </div>
-
-    <!-- company 2 -->
-    <div>
-        <h4 class="profession-title"> Manager 
-            <span class="profession-company"> Roga & Kopyta New</span> 
-        </h4>
-        <span class="profession-time">
-            March 2015 - October 2018 <span class="profession-divider"> | </span> Ukraine
-        </span>
-
-        <ul class="profession-duties">
-            <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.
-            </li>
-            <li class="profession-duties-item">Quis ipsum suspendisse ultrices gravida.</li>
-            <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
-        </ul>
-    </div>
-
     <!-- company 3 -->
-    <div>
-        <h4 class="profession-title" > Manager 
-            <span class="profession-company"> Roga & Kopyta LLC </span> 
-        </h4>
-        <span class="profession-time">
-            June 2014 - February 2015 <span class="profession-divider"> | </span> Ukraine
-        </span>
-
-        <ul class="profession-duties">
-            <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li class="profession-duties-item">Quis ipsum suspendisse ultrices gravida.</li>
-            <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
-        </ul>
-    </div>
+        <div>
+            <h4 class="profession-title">Barmanager
+                <span class="profession-company"> Superior golf & spa resort </span>
+            </h4>
+            <span class="profession-time">
+                August 2017 - December 2019 <span class="profession-divider"> | </span> Kharkiv
+            </span>
+        
+            <ul class="profession-duties">
+                <li class="profession-duties-item">Development of drinks menu.</li>
+                <li class="profession-duties-item">Product control and beverage preparation.</li>
+                <li class="profession-duties-item">Cash discipline.</li>
+            </ul>
+        </div>
 
     <!-- my education -->
-    <div>
-        <h3 class="about-me-title">Education</h3>
-        <h4 class="my-education-school">Severodonetsk High Vocational School N24</h4>
-        <h5 class="my-profession-name">The guard</h5>
-        <span class="education-time">
-            September 2013 - May 2014 <span class="education-divider">|</span> Ukraine
-        </span>
-
-     </div>
-</div>
+        <div>
+            <h3 class="about-me-title">Education</h3>
+            <h4 class="my-education-school">Severodonetsk High Vocational School N24</h4>
+            <h5 class="my-profession-name">The guard</h5>
+            <span class="education-time">
+                September 2013 - May 2014 <span class="education-divider">|</span> Severodonetsk
+            </span>
+        
+        </div>
+    </div>
 </body>
 
 </html>

@@ -129,10 +129,6 @@ body {
   margin-left: 15px;
 }
 
-.info-display-none-mobile {
-  display: none;
-}
-
 .profession {
   font-size: 14px;
   font-weight: 700px;
@@ -281,5 +277,11 @@ body {
 
   .discription {
     color: #000;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .info-display-none-mobile {
+    display: none;
   }
 }

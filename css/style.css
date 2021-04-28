@@ -280,7 +280,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .info-display-none-mobile {
     display: none;
   }
